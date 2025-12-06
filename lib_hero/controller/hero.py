@@ -1,7 +1,7 @@
 # app/routers/hero.py
 from fastapi import HTTPException
 from sqlmodel import Session, select
-from controller.generic import create_crud_router, Hooks
+from .generic import create_crud_router, Hooks
 from model.models import Hero, Team
 from model.dto import HeroCreate, HeroUpdate, HeroRead
 
