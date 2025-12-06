@@ -1,4 +1,4 @@
-from model.models import HeroBase, TeamBase
+from .models import HeroBase, TeamBase
 from typing import  List, Optional
 from sqlmodel import Field
 
