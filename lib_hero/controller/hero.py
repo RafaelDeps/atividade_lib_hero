@@ -2,8 +2,9 @@
 from fastapi import HTTPException
 from sqlmodel import Session, select
 from .generic import create_crud_router, Hooks
-from model.models import Hero, Team
-from model.dto import HeroCreate, HeroUpdate, HeroRead
+from ..model.models import Hero, Team
+from ..model.dto import HeroCreate, HeroUpdate, HeroRead
+
 
 class HeroHooks(Hooks[Hero, HeroCreate, HeroUpdate]):
     def pre_create(self, payload: HeroCreate, session: Session) -> None:
