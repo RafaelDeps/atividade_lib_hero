@@ -1,6 +1,6 @@
 [project]
 name = "lib-hero-raf"
-version = "0.1.2"
+version = "0.1.3"
 description = "Biblioteca MVC de Hero usada na atividade da disciplina."
 authors = [
   { name="Rafael", email="rafaeldeps15@gmail.com" }
